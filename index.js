@@ -2,9 +2,9 @@ require('dotenv').config()
 const dotenv = require('dotenv').config()
 const express = require('express')
 const app = express()
-const PORT = 3001
-const routes = require('../backend/routes/api')
-const connection = require('../backend/database')
+const PORT = 3000
+const routes = require('./routes/api')
+const connection = require('./database')
 
 app.use(express.json())
 app.use(express.static("static"))
